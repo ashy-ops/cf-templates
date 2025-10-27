@@ -17,3 +17,19 @@ int power(int a, int b) {
     else
         return a * tmp * tmp;
 }
+
+//or in terms of binary bits non recursive-
+
+ll modPow(ll a, ll b, ll &m) {
+    ll result = 1;
+//a is base, b is power, m is constant modulo
+    a %= m;
+    while (b > 0) {
+        if (b & 1) { //if odd
+            result = result * a;
+        }
+        a = (a * a) // if odd then it will become a*a*a otherwise a*a if even;
+        b >>= 1;//shifting bits to the right aka dividing by 2
+    }
+    return result;
+}
