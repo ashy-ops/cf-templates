@@ -1,4 +1,3 @@
-```cpp
 ll modPow(ll a, ll b, ll &m) {
     ll result = 1;
 //a is base, b is power, m is constant modulo
@@ -12,4 +11,3 @@ ll modPow(ll a, ll b, ll &m) {
     }
     return result;
 }
-```
