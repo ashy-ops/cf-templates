@@ -10,7 +10,7 @@ void generateSubsets(const vector<int>& nums, vector<vector<int>> &subsets)
         // Check each bit of 'mask'
         for (int i = 0; i < n; i++) {
             // If the i-th bit in mask is set, include nums[i]
-            if ((mask & (1 << i)) != 0) {  //if((mask & (1<<i)) != 0) This is wrong due to higher priority of != than & operator hence keep it in brackets!
+            if ((mask & (1 << i)) != 0) {  //if(mask & (1<<i) != 0) or if(mask & i<<i !-0) This is wrong due to higher priority of != than & operator hence keep it in brackets!
                 subset.push_back(nums[i]);
             }
         }
