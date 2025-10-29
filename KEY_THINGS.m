@@ -11,3 +11,4 @@ KEEP THIS VIDEO IN MIND-https://www.youtube.com/watch?v=WTr12dK2Se0
 maybe you can then brute force it? or maybe pherhaps O(n^2)?
 
 #Maybe try to think in terms of binary bits?
+#check if there are repeated operations over and over again? If yes then maybe go for DP/caching the results out
