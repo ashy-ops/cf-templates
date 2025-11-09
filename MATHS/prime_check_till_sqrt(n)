@@ -1,0 +1,6 @@
+any composite number can be represented as product of two numbers-
+a*b
+three cases-
+a=b, in that case both are sqrt(n)
+a<sqrt(n) and b<sqrt(n)- then that is not possible as the product will not go upto n
+a>sqrt(n) and b<sqrt(n) in this case it is possible however it shows that one of the numbers must be less that sqrt(n)
